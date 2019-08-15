@@ -165,7 +165,7 @@ $("img").click(function(event) {
 
 function gameOver() {
   if (guessed.length / 2 === game.colors.length) {
-    if(innerWidth < 768){
+    if(innerWidth < 768 && innerWidth > 500){
       $(".col-lg-5 img").show();
      } 
     $("#table").hide();
