@@ -140,22 +140,17 @@ td {
     padding-top: 0;
   }
   .congrats {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
-@media only screen and (max-width: 768px) and (min-height: 500px) {
+@media only screen and (max-width: 768px) and (max-height:550px) {
   .col-lg-5 img {
     display: none;
   }
   img {
     width: 45px;
     height: auto;
-  }
-  .col-lg-5 img {
-    height: 200px;
-    margin: 0;
-    padding: 0;
   }
   #instructions {
     font-size: 40px;
@@ -165,28 +160,27 @@ td {
     padding-top: 0;
   }
   .congrats {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   img {
-    width: 35px;
+    width: 40px;
     height: auto;
+    margin:0 0;
+    padding:0 0;
   }
   .col-lg-5 img {
     display: none;
   }
   .congrats {
-    font-size: 25px;
+    font-size: 15px;
   }
 }
 
 @media only screen and (orientation: landscape) {
   body {
     transform: rotate(90 deg);
-  }
-  .col-lg-5 img {
-    display: none;
   }
 }
