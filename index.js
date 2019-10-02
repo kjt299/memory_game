@@ -141,7 +141,7 @@ $("img").click(function(event) {
 
 function gameOver() {
   if (game.guessedCards.length / 2 === Object.keys(game.colors).length) {
-    if (innerWidth < 768 && innerWidth > 500) {
+    if (innerWidth < 768 && innerWidth > 500 && innerHeight > 550) {
       // show penguin picture
       $(".col-lg-5 img").show();
     }
