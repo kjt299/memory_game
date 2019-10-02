@@ -93,8 +93,8 @@ td {
 
 @media only screen and (max-width: 500px) {
   img {
-    width: 10px;
-    height: auto;
+    width: 20px;
+    height: 10px;
   }
   .col-lg-5 img {
     display: none;
@@ -107,7 +107,7 @@ td {
 @media only screen and (max-width: 768px) {
   img {
     width: 25px;
-    height: auto;
+    height: 30px;
   }
   .col-lg-5 img {
     height: 200px;
