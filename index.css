@@ -1,25 +1,20 @@
-/* Memory Card Game 
- * Date: 13/08/2019
- * Author: kjt299
-*/
-
 html,
 body {
-  background-color:#05244c;
+  background-color: #05244c;
   text-align: center;
   font-family: "Indie Flower", cursive;
 }
 
-.container, #congrats {
+.container {
   text-align: center;
   /*centering container vertically and horizontally*/
-  position:absolute;
-  top:50%;
-  left:50%;
-  padding:15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
   -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .row {
@@ -31,16 +26,16 @@ body {
 }
 
 img {
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .col-lg-7 {
   text-align: center;
 }
 
-.col-lg-5 img{
-  width:400px;
-  height:auto; 
+.col-lg-5 img {
+  width: 400px;
+  height: auto;
   margin: 10px 0;
 }
 
@@ -60,7 +55,7 @@ td {
   text-align: center;
 }
 
-#start button {
+.btn {
   width: 75%;
   height: 100px;
   font-size: 40px;
@@ -70,46 +65,64 @@ td {
   background-color: #248e1c;
   color: white;
   font-weight: bold;
-  border:2px solid black;
+  border: 2px solid black;
 }
 
-#start button:hover {
+.btn:hover {
   opacity: 0.6;
 }
 
-#instructions{
-  font-size:65px;
-  color:white;
-  margin-top:3%;
+#instructions {
+  font-size: 65px;
+  color: white;
+  margin-top: 4%;
 }
 
+.congrats {
+  width: 75%;
+  font-size: 40px;
+  margin: 15px;
+  border: 0;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 150px;
+  color: white;
+  letter-spacing: 2px;
+  background-color: #248e1c;
+}
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   img {
     width: 25px;
     height: auto;
   }
   .col-lg-5 img {
-    display:none;
+    display: none;
+  }
+  .congrats{
+    font-size: 25px;
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   img {
     width: 45px;
     height: auto;
   }
   .col-lg-5 img {
-   height:200px;
-   margin:0;
-   padding:0;
+    height: 200px;
+    margin: 0;
+    padding: 0;
   }
   #instructions {
-   font-size:40px;
+    font-size: 40px;
   }
-  #table{
-    margin-top:0;
-    padding-top:0;
+  #table {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .congrats{
+    font-size: 30px;
   }
 }
 
@@ -119,14 +132,14 @@ td {
     height: auto;
   }
   .col-lg-5 img {
-    height:200px;
-   }
-   #instructions{
-     font-size: 40px;
-   }
-   #table{
-    margin-top:0;
-    padding-top:0;
+    height: 200px;
+  }
+  #instructions {
+    font-size: 40px;
+  }
+  #table {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -142,36 +155,10 @@ td {
     width: 80px;
     height: auto;
   }
-  #congrats{
-    margin-left:20%;
-  }
 }
 
 @media only screen and (orientation: landscape) {
   body {
     transform: rotate(90 deg);
   }
-}
-
-#congrats{
-  background-color: #4362fa;
-  border: 2px solid black;
-  border-radius: 50%;
-  width:300px;
-  height:300px;
-  display:none;
-}
-
-#congrats img{
-  width: 250px;
-  height:auto;
-  margin-top:25px;
-  margin-bottom:15px;
-}
-
-#congrats p{
-  font-size: 30px;
-  color:white;
-  font-weight:700;
-  letter-spacing: 2px;
 }
