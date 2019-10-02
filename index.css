@@ -144,6 +144,31 @@ td {
   }
 }
 
+@media only screen and (max-width: 768px) and (min-height: 500px) {
+  .col-lg-5 img {
+    display: none;
+  }
+  img {
+    width: 45px;
+    height: auto;
+  }
+  .col-lg-5 img {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  #instructions {
+    font-size: 40px;
+  }
+  #table {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .congrats {
+    font-size: 30px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   img {
     width: 35px;
