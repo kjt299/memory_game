@@ -173,7 +173,7 @@ $(document).ready(function() {
     $("#instructions").hide();
     $("#start").hide();
     $("#table").show();
-    if (innerWidth < 768) {
+    if (innerWidth < 500) {
       $(".col-lg-5 img").hide();
     }
     game.started = true;
@@ -182,7 +182,7 @@ $(document).ready(function() {
 
 //hides penguine picture if the screen is not big enough and shows once the screen width is over 768 px
 $(window).resize(function() {
-  if (innerWidth < 768 && game.started === true) {
+  if (innerWidth < 500 && game.started === true) {
     $(".col-lg-5 img").hide();
   } else {
     $(".col-lg-5 img").show();
