@@ -173,18 +173,14 @@ $(document).ready(function() {
     $("#instructions").hide();
     $("#start").hide();
     $("#table").show();
-    if (innerWidth < 500) {
-      $(".col-lg-5 img").hide();
-    }
-    game.started = true;
   });
 });
 
 //hides penguine picture if the screen is not big enough and shows once it is
 $(window).resize(function() {
-  if (innerWidth < 500 && game.started === true) {
+  if (innerWidth < 500) {
     $(".col-lg-5 img").hide();
-  } else if(innerHeight < 550 && game.started === true && innerWidth < 768){
+  } else if(innerHeight < 550  && innerWidth < 768){
     $(".col-lg-5 img").hide();
   } else {
     $(".col-lg-5 img").show();
