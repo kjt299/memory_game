@@ -75,7 +75,20 @@ td {
 #instructions {
   font-size: 65px;
   color: white;
-  margin-top: 3%;
+  margin-top: 4%;
+}
+
+.congrats {
+  width: 75%;
+  font-size: 40px;
+  margin: 15px;
+  border: 0;
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 150px;
+  color: white;
+  letter-spacing: 2px;
+  background-color: #248e1c;
 }
 
 @media only screen and (max-width: 500px) {
@@ -85,6 +98,9 @@ td {
   }
   .col-lg-5 img {
     display: none;
+  }
+  .congrats{
+    font-size: 25px;
   }
 }
 
@@ -104,6 +120,9 @@ td {
   #table {
     margin-top: 0;
     padding-top: 0;
+  }
+  .congrats{
+    font-size: 30px;
   }
 }
 
@@ -142,17 +161,4 @@ td {
   body {
     transform: rotate(90 deg);
   }
-}
-
-.congrats {
-  width: 75%;
-  font-size: 40px;
-  margin: 15px;
-  border: 0;
-  border-radius: 10px;
-  border: 2px solid black;
-  height: 150px;
-  color: white;
-  letter-spacing: 2px;
-  background-color: #248e1c;
 }
