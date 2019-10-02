@@ -91,38 +91,17 @@ td {
   background-color: #248e1c;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 1200px) {
   img {
-    width: 20px;
-    height: 10px;
-  }
-  .col-lg-5 img {
-    display: none;
-  }
-  .congrats{
-    font-size: 25px;
+    width: 80px;
+    height: auto;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   img {
-    width: 25px;
-    height: 30px;
-  }
-  .col-lg-5 img {
-    height: 200px;
-    margin: 0;
-    padding: 0;
-  }
-  #instructions {
-    font-size: 40px;
-  }
-  #table {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  .congrats{
-    font-size: 30px;
+    width: 60px;
+    height: auto;
   }
 }
 
@@ -143,17 +122,38 @@ td {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   img {
-    width: 60px;
+    width: 45px;
     height: auto;
+  }
+  .col-lg-5 img {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+  #instructions {
+    font-size: 40px;
+  }
+  #table {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .congrats {
+    font-size: 30px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 500px) {
   img {
-    width: 80px;
+    width: 25px;
     height: auto;
+  }
+  .col-lg-5 img {
+    display: none;
+  }
+  .congrats {
+    font-size: 25px;
   }
 }
 
